@@ -4,6 +4,7 @@ from random import randint
 
 MOST_SPEAKED_LANGUAGES = ["eng", "zho", "hin", "spa", "ara", "fra"]
 
+
 def extract_lines(path):
     with open(path, mode='r', encoding="utf8") as file:
         lines = file.readlines()
@@ -29,10 +30,11 @@ def filter_spoken_languages_lines(texts_path, languages_path):
     return filtered_data
 
 
-def choose_random_line(lines):
+def choose_random_line(texts_path, languages_path):
+    lines = filter_spoken_languages_lines(texts_path, languages_path)
     line = randint(0, len(lines))
     return lines[line]
 
 
 if __name__ == "__main__":
-    print(choose_random_line(filter_spoken_languages_lines('data/x_test.txt', 'data/y_test.txt')))
+    print(choose_random_line('data/x_test.txt', 'data/y_test.txt'))
