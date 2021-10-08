@@ -6,7 +6,7 @@ from extract_data import choose_random_line
 
 
 LANGUAGES_3 = {'ara': "Arabic", "eng": "English", "fra": "French", "hin":"Hindi", "spa": "Spanish", "zho": "Madarin"}
-LANGUAGES_2 = {'ar': "Arabic", "en": "English", "fr": "French", "hi":"Hindi", "es": "Spanish", "zh": "Madarin"}
+LANGUAGES_2 = {'ar': "Arabic", "en": "English", "fr": "French", "hi":"Hindi", "es": "Spanish", "zh": "Madarin", 'zh-Hant': 'Mandarin'}
 ABREVIATIONS_MATCH = {'ara': 'ar', 'eng': 'en', 'fra': 'fr', 'hin': 'hi', 'spa': 'es', 'zho': 'zh'}
 DATA_URL_TEXTS = 'data/x_test.txt'
 DATA_URL_LANGUAGES = 'data/y_test.txt'
